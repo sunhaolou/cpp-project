@@ -166,7 +166,7 @@ If the page has WIN or LOSE instead of choices, you should
  
 Congratulations! You have won. Hooray!
 
-    or
+or
 
 Sorry, you have lost. Better luck next time!
 
@@ -259,7 +259,8 @@ find all cycle-free ways to "win" a given choose your own adventure
 story. Note that this does NOT mean you are to assume the story has no
 cycles. It only means that you should print each way to win that does
 not repeat the same page. For example, if the story had a path to win
-like 
+like
+```
 
        +--------+
        |        |
@@ -268,7 +269,7 @@ like
     ^     |  |     ^
     |     |  |     |
     +-----+  +->8->9
-
+```
 You would only report the paths that use pages 1,2,3,4,5,6,7 and
 1,2,3,4,5,8,9,7 as those are the two ways to win without repeating a
 page (there are infinite ways to win if you allow repetition of
@@ -313,7 +314,7 @@ Hint: Think about the story as a graph (make sure you have read and
       you want to mark a node "visited." That is, you only want to
       avoid re-visiting a node on the same path, but may wish
       to revisit it on another path.  E.g., thik carefully about
-
+```
 1--->2--->3--->W
 |         ^
 |         |
@@ -321,7 +322,7 @@ Hint: Think about the story as a graph (make sure you have read and
 
       where you need to make sure you get both the 1->2->3->W path
       and the 1->4->5->3->W path.
-
+```
 Make sure your Makefile produces cyoa-step3 (and that cyoa-step1
 and cyoa-step2 still build and run correctly). Test your
 program well, and submit.
